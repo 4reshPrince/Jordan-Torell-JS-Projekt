@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style1.css">
+    <script defer src="app1.js"></script>
+</head>
+<body>
+    <header>
+        <div class="topnav" id="myTopnav">
+          <a href="index.html" target="_self">Home</a>
+          <a href="bmi.html" target="_self">BMI</a>
+          <a href="shop.html" target="_self">Shop</a>
+          <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+          <i class="fa fa-bars"></i>
+          </a>
+        </div>
+    </header>
+
+    <h3>Shop</h3>
+
+    <div id="cart" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+
+        <div id='cart-wrapper' class="slider close">
+            <div id='cart'>
+                <div id="cart-products-wrapper">
+                    <table id="cart-table">
+                    <thead id="cart-table-header">
+                         <th class="name-col">Product Name</th> 
+                         <th class="quantity-col">Quantity</th>       
+                         <th class="price-col">Price</th>
+                         <th class="updated-price-col">Updated Price</th>
+                         <th class="update-col">Update</th>
+                         <th class="remove-col">Remove</th>
+                    </thead>
+                    <tbody id="cart-table-body"></tbody>
+                    </table>
+                </div>
+            </div>
+            
+            <div id='amount-controls'>
+                <div id="cart-amount-wrapper">
+                    <table>
+                        <tbody class="text">
+                            <tr id='subtotal-wrappper'>
+                                <td id="subtotal-label">Subtotal:</td>
+                                <td id="subtotal">0.00</td>
+                            </tr>
+  
+                            <tr id='total-wrapper'>
+                                <td id="total-label">Total:</td>
+                                <td id="total">0.00</td>
+                            </tr>
+  
+                            <tr id="promo-checkout">
+                                <td>
+                                    <button id="checkout">Checkout</button>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+
+    </div>
+  
+    <span class="openbtn" onclick="openNav()">Cart</span>
+
+    <div id="shop">
+          
+        <div class="products" id="proteinpulver">
+            <img src="proteinpulver.png" alt="">
+            <p class="product-name">Proteinpulver</p>
+            <p class="product-description">OneWhay is the Powder that has the best essential ingredients as energi, protein, amino acids, carbs, fat and salt. That is all the proteins you need.</p>
+            <p class="product-price" value='350'>350</p>
+            <button class="add-to-cart" id='test'>ADD</button>
+        </div>
+        <div class="products" id="Pwo+">
+            <img src="pwo.jpeg" alt="">
+            <p class="product-name">Pwo+</p>
+            <p class="product-description">When you dont have energi left you can use pwo+ for a more boost to be able to get your training done.</p>
+            <p class="product-price" value='300'>300</p>
+            <button class="add-to-cart" id='test'>ADD</button>
+        </div>
+        <div class="products" id="Shaker">
+            <img src="shaker.jpeg" alt="">
+            <p class="product-name">Shaker</p>
+            <p class="product-description">The shaker has a silo that prevents the proteinshake to get lumps. The shaker comes with the perfect size (500 ml).</p>
+            <p class="product-price" value='70'>70</p>
+            <button class="add-to-cart" id='test'>ADD</button>
+        </div>
+        <div class="products" id="Proteinpulver+">
+            <img src="proteinpulver.png" alt="">
+            <p class="product-name">Proteinpulver+</p>
+            <p class="product-description">OneWhay is the Powder that has the best essential ingredients as energi, protein, amino acids, carbs, fat and salt. That is all the proteins you need.</p>
+            <p class="product-price" value='340'>340</p>
+            <button class="add-to-cart" id='test'>ADD</button>
+        </div>
+    </div>
+  
+
+    <div class="footer">
+        <a href="#About">About</a>
+        <a href="#Contact">Contact</a>
+        <a href="#Info">Info</a>
+    </div>
+</body>
+</html>
