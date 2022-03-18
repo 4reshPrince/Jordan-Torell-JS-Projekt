@@ -184,24 +184,25 @@ h2 {
   color: rgba(150, 124, 66, 0.9);
 }
 
+@media (max-width: 800px) {
 
-
-
-
-
-
-/* @media screen and (max-width: 600px) {
-  .topnav a:not(:first-child) {display: none;}
-  .topnav a.icon {
-    float: right;
-    display: block;
+  header {
+      font-size: 40px;
   }
-}
 
-@media screen and (max-width: 600px) {
-  .topnav.responsive {position: relative;}
-  .topnav.responsive .icon {
-    position: absolute;
-    right: 0;
-    top: 0;
-  } */
+  h3 {
+      text-align: center;
+      font-size: 30px;
+      font-weight: lighter;
+      font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  }
+
+  .footer {
+      align-items: center;
+      width: 87%;
+      padding: 50px;
+      font-size: 18px;
+      background-color: black;
+  }
+  
+}
